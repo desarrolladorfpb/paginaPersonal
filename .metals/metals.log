@@ -1,0 +1,12 @@
+2020.09.05 23:54:24 INFO  started: Metals version 0.9.3 in workspace 'C:\Users\franc\Desktop\Mis cosas\cosas autodidactas\cosas de React\pagina' for client vscode.
+2020.09.05 23:54:26 INFO  time: initialize in 1.66s
+2020.09.05 23:54:30 WARN  no build tool detected in workspace 'C:\Users\franc\Desktop\Mis cosas\cosas autodidactas\cosas de React\pagina'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.09.05 23:54:58 INFO  shutting down Metals
+2020.09.10 17:24:11 INFO  started: Metals version 0.9.3 in workspace 'C:\Users\franc\Desktop\Mis cosas\cosas autodidactas\cosas de React\pagina' for client vscode.
+2020.09.10 17:24:12 INFO  time: initialize in 1.07s
+2020.09.10 17:24:16 WARN  no build tool detected in workspace 'C:\Users\franc\Desktop\Mis cosas\cosas autodidactas\cosas de React\pagina'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.09.10 18:21:00 INFO  shutting down Metals
+2020.09.11 00:47:29 INFO  started: Metals version 0.9.3 in workspace 'C:\Users\franc\Desktop\Mis cosas\cosas autodidactas\cosas de React\pagina' for client vscode.
+2020.09.11 00:47:31 INFO  time: initialize in 1.32s
+2020.09.11 00:47:35 WARN  no build tool detected in workspace 'C:\Users\franc\Desktop\Mis cosas\cosas autodidactas\cosas de React\pagina'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.09.11 01:46:16 INFO  shutting down Metals

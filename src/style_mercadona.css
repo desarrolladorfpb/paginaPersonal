@@ -1,0 +1,302 @@
+.containerAct{
+    left: 10%;
+    height: 110%;
+    width: 80%;
+    top: 30%;
+    position: absolute;
+}
+.containerAct_titulo{
+    left: 0%;
+    width: 80%;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+}
+.containerAct_seccion{
+    left: 0%;
+    width: 100%;
+    border-bottom: 3px solid #ECE4B7;
+    font-weight: bold;
+    font-size: 30px;
+    float: left;
+    position: relative;
+}
+.containerAct_descripcion{
+    left:0%;
+    width: 90%;
+    position: relative;
+    overflow: auto;
+    text-indent: 5%;
+}
+.separador_h{
+    width: 0.5%;
+    height:110%; 
+    border-radius: 50%;
+    margin-left: 9%;
+    margin-right: 9%;
+    float: left;
+    position: relative;
+    background: #ECE4B7;
+}
+.separador_t{
+    width: 100%;
+    height:0.5%; 
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    background: #ECE4B7;
+}
+.containerAct_actividad{
+    float: left;
+    top: 5%;
+    opacity: 0.3;
+    position: relative;
+    width: 40%;
+    height: 90%;
+    transition: all 1s;
+
+}
+.containerAct_actividad:hover{
+    opacity: 1;
+}
+.seccion_titulo{
+    margin-top: 2%;
+    text-align: center;
+    font-weight: bolder;
+}
+.seccion_imagen{
+    margin-top: 2%;
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    text-align: center;
+    font-weight: bolder;
+}
+.seccion_descripcion{
+    margin-top: 2%;
+    height: 20%;
+    position: relative;
+    text-align: justify;
+}
+/*responsive*/
+
+@media only screen and (max-width: 600px) {
+    .separador_h{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        height:0.5%; 
+        border-radius: 50%;
+        float: left;
+        position: relative;
+        background: #ECE4B7;
+        
+        margin-top: 30%;
+
+    }
+    .separador_t{
+        margin-top: 30%;
+    }
+    .containerAct{
+        width: 100%;
+        left: 0%;
+    }
+    .containerAct_actividad{
+        width: 100%;
+        height: 100%;
+    }
+}
+/*botones */
+/* Página de inicio */
+.boton_principal_gestionar{
+    position: absolute;
+    border: 2px solid orange;
+    top: 15%;
+    width: 30%;
+    height: 32%;
+    opacity: 0;
+    cursor: pointer;
+    left: 20%;
+}
+.boton_actividad_lista{
+    position: absolute;
+    border: 2px solid orange;
+    top: 14.7%;
+    width: 30%;
+    height: 32%;
+    opacity: 0;
+    cursor: pointer;
+    left: 50%;
+}
+.boton_actividad_verlista{
+    position: absolute;
+    border: 2px solid orange;
+    top: 47%;
+    width: 60%;
+    height: 32%;
+    opacity: 0;
+    cursor: pointer;
+    left: 20%;
+}
+/* Gestionar productos*/
+.boton_gestionar_editar{
+    position: absolute;
+    border: 2px solid orange;
+    top: 13.5%;
+    opacity: 0;
+    width: 60%;
+    height: 32.5%;
+    cursor: pointer;
+    left: 20%;
+}
+.boton_gestionar_add{
+    position: absolute;
+    border: 2px solid orange;
+    top: 47%;
+    opacity: 0;
+    width: 60%;
+    height: 34%;
+    cursor: pointer;
+    left: 20%;
+}
+/*Listado edicion productos*/
+.boton_edit_edit{
+    position: absolute;
+    border: 2px solid orange;
+    top: 20%;
+    width: 17%;
+    height: 4.5%;
+    cursor: pointer;
+    left: 63%;
+    opacity: 0;
+}
+.boton_edit_borrar{
+    position: absolute;
+    border: 2px solid orange;
+    top: 24.5%;
+    width: 17%;
+    height: 4.5%;
+    cursor: pointer;
+    left: 63%;
+    opacity: 0;
+}
+.boton_edit_volver{
+    position: absolute;
+    border: 2px solid orange;
+    top: 14%;
+    width: 14%;
+    opacity: 0;
+    height: 5.5%;
+    cursor: pointer;
+    left: 20%;
+}
+/*Formulario Edicion */
+.boton_edit_form{
+    position: absolute;
+    border: 2px solid orange;
+    top: 66.7%;
+    left: 29%;
+    width: 14%;
+    opacity: 0;
+    height: 5%;
+    cursor: pointer;
+}
+.boton_cancel{
+    position: absolute;
+    border: 2px solid orange;
+    top: 48%;
+    left: 44%;
+    width: 32%;
+    opacity: 0;
+    height: 5%;
+    cursor: pointer;
+
+}
+/*Formulario registrar*/
+.boton_registrar{
+    position: absolute;
+    border: 2px solid orange;
+    top: 66%;
+    left: 28%;
+    width: 30%;
+    opacity: 0;
+    height: 5%;
+    cursor: pointer;
+}
+/* Listado de productos*/
+.boton_list_filter{
+    position: absolute;
+    border: 2px solid orange;
+    top: 22%;
+    left: 60%;
+    width: 20%;
+    opacity: 0;
+    height: 5%;
+    cursor: pointer;
+}
+.boton_list_search{
+    position: absolute;
+    border: 2px solid orange;
+    top: 14.5%;
+    left: 63%;
+    width: 17%;
+    opacity: 0;
+    height: 5%;
+    cursor: pointer;
+
+}
+.boton_list_vermas{
+    position: absolute;
+    border: 2px solid orange;
+    top: 27%;
+    left: 56%;
+    width: 24%;
+    opacity: 0;
+    height: 4.5%;
+    cursor: pointer;
+}
+.boton_list_volver{
+    position: absolute;
+    border: 2px solid orange;
+    top: 14.5%;
+    left: 20%;
+    width: 17%;
+    opacity: 0;
+    height: 5%;
+    cursor: pointer;
+
+}
+/* ver lista */
+.boton_verlist_volver{
+    position: absolute;
+    border: 2px solid orange;
+    top: 14%;
+    left: 20%;
+    width: 60%;
+    opacity: 0;
+    height: 5.5%;
+    cursor: pointer;
+
+}
+.boton_verlist_coger{
+    position: absolute;
+    border: 2px solid orange;
+    top: 24.2%;
+    left: 61%;
+    width: 19%;
+    opacity: 0;
+    height: 4.8%;
+    cursor: pointer;
+
+}
+.boton_verlist_vermas{
+    position: absolute;
+    border: 2px solid orange;
+    top: 19.5%;
+    left: 61%;
+    width: 19%;
+    opacity: 0;
+    height: 4.8%;
+    cursor: pointer;
+
+}
