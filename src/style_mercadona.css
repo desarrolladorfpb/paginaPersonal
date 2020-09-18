@@ -97,6 +97,7 @@
         margin-top: 30%;
 
     }
+    .containerAct_titulo{width: 120%;}
     .containerAct_actividad{
         left: 10%;
     }
@@ -106,7 +107,7 @@
     }
     .containerAct_descripcion{
         left:5%;
-        width: 80%;
+        width: 120%;
         text-align: justify;
     }
     .seccion_descripcion{
