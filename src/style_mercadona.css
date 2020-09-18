@@ -27,7 +27,6 @@
     position: relative;
     overflow: auto;
     text-indent: 5%;
-    
     text-align: justify;
 }
 .separador_h{
@@ -98,8 +97,10 @@
         margin-top: 30%;
 
     }
-    .containerAct_titulo{
-        left: 5%;
+    .containerAct_descripcion{
+        left:5%;
+        width: 80%;
+        text-align: justify;
     }
     .seccion_descripcion{
         left: 5%;
