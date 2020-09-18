@@ -45,7 +45,7 @@ render(){
     
     <div class="containerp">
     
-    <div class="containerheaderp">Proyectos a Realizados.</div>
+    <div class="containerheaderp">Proyectos Realizados.</div>
     <div class="containercontenidop">Con el fin de probar los conocimientos que se han obtenido más allá de la carrera se exponen
         varios proyectos que se hicieron con el fin de practicar y asentar lo aprendido. Entre estos proyectos
         podemos ver dos en android y proyectos de JavaScript entre los que entra esta misma página:
