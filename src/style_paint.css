@@ -1,0 +1,56 @@
+#circulopaint {
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #f5841b;
+    position: absolute;
+}
+#tutorial{
+    width: 20%;
+    height: 40%;
+    float: top;
+    border: chocolate 2px solid;
+    position: relative;
+}
+#mas{
+    font-size: 20px;
+  }
+#menos{
+    font-size: 20px;
+  }
+  #naranja{
+      background-color: orange;
+  }
+  #black{
+      background-color: black;
+  }
+td {
+height: 50px;
+width: 50px;
+cursor: pointer;
+text-align: center;
+}
+table {
+   position: relative;
+   float: top;
+}
+#volver{
+    float:top;
+    top:80%;
+    position: relative;
+    left: 30%;
+    font-family: fantasy;
+    background: #ECE4B7;
+    width: 30%;
+    cursor: pointer;
+}
+#escribir{
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px){
+    #tutorial{
+        width: 100%;
+    }
+}

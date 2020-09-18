@@ -1,5 +1,5 @@
 body{
-    background: #766153;
+    background-color: ghostwhite;
 }
 .container{
     width: 80%;
@@ -15,6 +15,8 @@ body{
 #logo{
     float: left;
     height: 70%;
+    z-index: 16;
+    image-resolution: initial;
     position: absolute;
 }
 #logo:hover{
@@ -43,7 +45,7 @@ body{
 
 #li1{
     position: absolute;
-    top:35%;
+    top:40%;
     font-family: fantasy;
     background: #7FB069;
     height: 5%;
@@ -70,7 +72,7 @@ p{
 }
 #li2{
     position: absolute;
-    top:40%;
+    top:35%;
     cursor: pointer;
     font-family: fantasy;
     display: flex;
@@ -119,6 +121,62 @@ p{
     height: 25%;
     background: #E6AA68; 
 }
+#typer{
+    color:#7FB069 ;
+    position: relative;
+    float: left;
+    top: 30%;
+    left: -10%;
+    font-weight: bold;
+    font-size:2.2vmax;
+    font-family:   monospace;
+}
+#typer2{
+    color:#7FB069 ;
+    position: relative;
+    float: left;
+    opacity: 0;
+}
+.typer3{
+    position: relative;
+    float: left;
+    height: 20%;
+    width:5%;
+    
+    transition: opacity 1s;
+    top: 80%;
+    cursor: pointer;
+    left: 54%;
+    transition: all 1s;
+}
+
+.typer4{
+    position: relative;
+    float: left;
+    transition: all 1s;
+    cursor: pointer;
+    height: 20%;
+    width:5%;
+    opacity: 0;
+    transition: opacity 1s;
+    top: 0%;
+    left: 49%;
+}
+.typerfooter{
+
+}
+#typerpaused{
+    color:#7FB069 ;
+    position: relative;
+    z-index: 15;
+    float: left;
+    opacity: 0;
+    cursor: default;
+    top: 30%;
+    font-weight: bold;
+    font-size:2.5vmax;
+    font-family:   monospace;
+}
 /*responsive*/
 @media only screen and (max-width: 600px) {
 .container{
@@ -126,6 +184,26 @@ p{
     width: 100%;
     height: 10%;
     
+}
+.typer3{
+    height: 0%;
+    width: 0%;
+}
+#containertyper{
+    height: 0%;
+    width: 0%;
+    content: none;
+    display: none;
+    opacity: 0;
+}
+#typerpaused{
+    height: 0%;
+    width: 0%;
+    opacity: 0;
+}
+.typer4{
+    height: 0%;
+    width: 0%;
 }
 
 #logo{
@@ -146,7 +224,7 @@ p{
     background: #E6AA68; 
 }
 #li1{
-    top: 15%;
+    top: 20%;
     width: 80%;
 }
 #li1:hover{
@@ -154,7 +232,7 @@ p{
     left:0px;
 }
 #li2{
-    top:20%;
+    top:15%;
     width: 80%}
 #li2:hover{
         width: 100%;

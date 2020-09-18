@@ -25,19 +25,38 @@ render(){
     <header>
       <HeaderP></HeaderP>
     </header>
-    <menu>
-      <li id="li1"><p>Sobre la página</p></li>
-      <li id="li2"><p>Sobre mí</p></li>
+    <menu> 
+    <li id="li2"><p>Sobre mí</p></li>
+    <li id="li1"><p>Sobre la página</p></li>
     </menu> 
     <div id="micontainer2">
       <div><img id="imagenmia" src="./imagenes/fotomia.jpg"/></div>
-      <div id="detalles"><p id="escribeEdad">Edad: {this.state.edad} años</p></div>
+      <div id="detalles">
+        <p><strong>Nombre:</strong> Francisco José Perejón Barrios</p>
+        <p id="escribeEdad"><strong>Edad:</strong> {this.state.edad} años</p>
+        <p><strong>Datos:</strong> Nacido en Sevilla, estudiando "Ingeniería informática. Ingeniería del Software" en la 
+          Universidad de Sevilla. Además de los conocimientos adquiridos en la carrera he decidido ampliar
+          de manera autodidacta en conocimientos relativos a aplicaciones móviles y webs, más concretamente
+          en Android studio y Frameworks relacionados con JavaScript. Haciendo tutoriales, viendo a gente más
+          experta y haciendo proyectos propios para ellos, los cuales se han integrado en esta página.</p>
+      
+      </div>
     </div>
     <div id="micontainer1">
-      <div id="detallesp"><p>Esta página está hecha con JavaScript, CSS3, React y HTML</p></div>
+      <div id="detallesp"><p>Esta página nace como uno de los proyectos por mejorar las habilidades con JavaScript.
+        En concreto está hecha usando , HTML5 y JavaScript, sobre el framework Reactjs. Tiene como propósito ser
+        altamente interactiva con una cantidad considerable de efectos. </p></div>
     </div>
       {
-    window.onload = ()=>{ 
+    window.onload = ()=>{
+      var bol= false;
+      if(bol){
+        document.location.reload();
+      }
+      bol=true;
+          console.log("Hola");
+          document.getElementById("li2").click();
+          document.getElementById("typer2").click();
          let micontainer2 = document.getElementById("micontainer2");
          let micontainer1 = document.getElementById("micontainer1");
          let imagenmia = document.getElementById("imagenmia");
@@ -49,6 +68,8 @@ render(){
          document.getElementById("li2").addEventListener("click", ()=>{
              
              imagenmia.style.top = "0px";
+             
+             imagenmia.style.height="60%";
              micontainer2.style.opacity = 1;
              micontainer2.style.transitionDelay= "1s";
              micontainer1.style.opacity = 0;
@@ -62,6 +83,7 @@ render(){
          document.getElementById("li1").addEventListener("click", ()=>{
              
              imagenmia.style.top = "200px";
+             imagenmia.style.height="0px";
              micontainer2.style.opacity = 0;
              micontainer2.style.transitionDelay= "0s";
              micontainer1.style.opacity = 1;

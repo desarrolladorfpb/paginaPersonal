@@ -4,7 +4,10 @@ import './style_inicio.css'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Inicio from './inicio';
 import Proyectos from './Proyectos';
+import Paint from './paint'
 import MercadonaLista from './MercadonaLista';
+import Anuncio from './anuncio';
+import Bar from './bar';
 
 class App extends Component {
   
@@ -20,9 +23,17 @@ render(){
               path="/proyectos"
               component={Proyectos} />
             <Route exact
-              path="/mercadona"
+              path="/proyectos/mercadona"
               component={MercadonaLista} />
-            
+            <Route exact
+              path="/proyectos/paint"
+              component={Paint} />
+            <Route exact
+              path="/proyectos/anuncio"
+              component={Anuncio} />
+            <Route exact
+              path="/proyectos/bar"
+              component={Bar} />
           </Switch>
       </BrowserRouter>
     

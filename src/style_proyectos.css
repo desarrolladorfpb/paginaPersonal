@@ -18,6 +18,7 @@
 .containerheaderp{
     float: top;
     width: 80%;
+    color: #ece4b7;
     top: 5%;
     position: relative;
     font-size: 40px;
@@ -92,6 +93,7 @@
 .containerlink_boton{
     float:top;
     top:80%;
+    z-index: 99999999999;
     position: absolute;
     left: 35%;
     font-family: fantasy;
@@ -101,9 +103,29 @@
     cursor: pointer;
     
 }
+#circulo {
+    width: 100px;
+            /*cursor*/
+            z-index: 9999;
+            mix-blend-mode: difference;
+            height: 100px;
+            opacity: 1;
+            left: 35%;
+            background-color: #000000;
+            top: 40%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            background: white;
+            transition:all 0.2s linear;
+            position: relative;
+            text-combine-upright: inherit;
+    
+}
 @media only screen and (max-width: 600px){
     .containerlink{
         width: 100%;
+
         border-left: 0px;
         border-right: 0px;
         border-top: 2px solid orange;
@@ -111,5 +133,10 @@
     }
     .containerp{
         top: 7%;
+    }
+    #circulo{
+        z-index: 0;
+        width: 0px;
+        height: 0px;
     }
 }

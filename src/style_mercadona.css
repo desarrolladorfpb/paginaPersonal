@@ -77,6 +77,8 @@
     height: 20%;
     position: relative;
     text-align: justify;
+    
+    overflow: auto;
 }
 /*responsive*/
 
@@ -94,6 +96,16 @@
         margin-top: 30%;
 
     }
+    .containerAct_titulo{
+        left: 5%;
+    }
+    .containerAct_descripcion{
+        left:5%;
+    }
+    .seccion_descripcion{
+        left: 5%;
+        width: 90%;
+    }
     .separador_t{
         margin-top: 30%;
     }
@@ -101,6 +113,10 @@
         width: 100%;
         top:10%;
         left: 0%;
+    }
+    .seccion_imagen{
+        width: 70%;
+        margin-left:15% ;
     }
     .containerAct_actividad{
         width: 100%;

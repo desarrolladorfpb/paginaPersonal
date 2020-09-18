@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import HeaderP from './HeaderP'
-import './style_inicio.css'
 import './style_mercadona.css'
-import { render } from '@testing-library/react';
 
 class MercadonaLista extends Component{
   constructor(props){
@@ -161,9 +158,15 @@ render(){
 
       {
     window.onload = ()=>{ 
-        document.getElementById("botonHome").onclick=()=>document.location.href="home";
-        document.getElementById("logo").onclick=()=>document.location.href="home";
-        document.getElementById("botonProyectos").onclick=()=>document.location.href="proyectos";
+        var bol= false;
+        if(bol){
+          document.location.reload();
+        }
+        bol=true;
+        document.getElementById("typer2").click();
+        document.getElementById("botonHome").onclick=()=>document.location.href="/home";
+        document.getElementById("logo").onclick=()=>document.location.href="/home";
+        document.getElementById("botonProyectos").onclick=()=>document.location.href="/proyectos";
         /* botones pagina de inicio*/
         document.getElementById("boton_actividad_gestion").addEventListener("click", ()=>{this.hazfocus("actividad_gestion")}, false)
         document.getElementById("boton_actividad_lista").addEventListener("click", ()=>{this.hazfocus("dolist")}, false)
