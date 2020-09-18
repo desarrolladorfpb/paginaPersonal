@@ -101,7 +101,8 @@
     }
     .containerAct_descripcion{
         left:5%;
-        width: 85%;
+        width: 80%;
+        text-align: justify;
     }
     .seccion_descripcion{
         left: 5%;
