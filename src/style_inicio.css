@@ -54,7 +54,12 @@
         width: 40%;
     }
     #detalles{
+        text-align: justify;
         top: -15%;
+    }
+    #detallesp{
+        width: 100%;
+        text-align: justify;
     }
     #micontainer2{
         left: 0%;
