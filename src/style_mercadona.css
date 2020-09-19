@@ -85,7 +85,7 @@
 
 @media only screen and (max-width: 600px) {
     .separador_h{
-        width: 120%;
+        width: 100%;
         margin-left: 0%;
         margin-right: 0%;
         height:0.5%; 
@@ -97,17 +97,17 @@
         margin-top: 30%;
 
     }
-    .containerAct_titulo{width: 120%;}
+    .containerAct_titulo{width: 100%;}
     .containerAct_actividad{
         left: 10%;
     }
     .containerAct_seccion{
-        
-        width: 120%;
+        text-indent: 5%;
+        width: 100%;
     }
     .containerAct_descripcion{
         left:5%;
-        width: 110%;
+        width: 90%;
         text-align: justify;
     }
     .seccion_descripcion{
@@ -116,7 +116,7 @@
     }
     .separador_t{
         margin-top: 30%;
-        width: 120%;
+        width: 100%;
     }
     .containerAct{
         width: 100%;
@@ -128,7 +128,7 @@
         margin-left:15% ;
     }
     .containerAct_actividad{
-        width: 100%;
+        width: 90%;
         opacity: 1;
         height: 100%;
     }

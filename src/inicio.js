@@ -11,6 +11,30 @@ class Inicio extends Component{
       edad:this.calculaEdad("24/09/1999")
     }
     this.calculaEdad = this.calculaEdad.bind(this);
+    this.tamVentana = this.tamVentana.bind(this);
+  }
+  tamVentana() {
+    var tam = [0, 0];
+    if (typeof window.innerWidth != 'undefined')
+    {
+      tam = [window.innerWidth,window.innerHeight];
+    }
+    else if (typeof document.documentElement != 'undefined'
+        && typeof document.documentElement.clientWidth !=
+        'undefined' && document.documentElement.clientWidth != 0)
+    {
+      tam = [
+          document.documentElement.clientWidth,
+          document.documentElement.clientHeight
+      ];
+    }
+    else   {
+      tam = [
+          document.getElementsByTagName('body')[0].clientWidth,
+          document.getElementsByTagName('body')[0].clientHeight
+      ];
+    }
+    return tam;
   }
   calculaEdad(birthday){
     var birthday_arr = birthday.split("/");
@@ -54,7 +78,6 @@ render(){
         document.location.reload();
       }
       bol=true;
-          console.log("Hola");
           document.getElementById("li2").click();
           document.getElementById("typer2").click();
          let micontainer2 = document.getElementById("micontainer2");
@@ -78,6 +101,7 @@ render(){
              detalles.style.left ="0px";
              detalles.style.transitionDelay="1s";
              detallesp.style.marginLeft ="50%";
+             detallesp.style.width="0%"
              detallesp.style.transitionDelay="0s"       
          }, false)
          document.getElementById("li1").addEventListener("click", ()=>{
@@ -91,6 +115,15 @@ render(){
              imagenmia.style.transitionDelay="0s";
              detalles.style.left ="50%";
              detalles.style.transitionDelay="0s"
+             console.log(document.documentElement.clientWidth,this.tamVentana[1]);
+             if(document.documentElement.clientWidth<600){
+
+              detallesp.style.width="100%"
+             }else{
+               
+             detallesp.style.width="50%"
+             }
+             
              detallesp.style.marginLeft ="0%";
              detallesp.style.transitionDelay="1s"
          }, false)
