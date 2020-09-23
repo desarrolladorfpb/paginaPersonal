@@ -72,7 +72,6 @@ render(){
             <img class="containerlink_imagen" src="./imagenes/splashbar.jpeg"/>
             <button id="verbar" class="containerlink_boton">Ver</button>
         </div>
-        <div class="containerlink"></div>
         <div class="containerlinksp_titulo">B. Proyectos en JavaScript</div>
         <div class="containerlink">
             
@@ -96,8 +95,6 @@ render(){
             <button id="veranuncio" class="containerlink_boton">Ver</button>
             
         </div>
-        <div class="containerlink"></div>
-        <div class="containerlink"></div>
     </div>
     </div>
     {window.onload=()=>{
