@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import HeaderP from './HeaderP'
 import './style_inicio.css'
+import ConfettiGenerator from "confetti-js";
 import { render } from '@testing-library/react';
 
 class Inicio extends Component{
@@ -71,8 +72,12 @@ render(){
         En concreto está hecha usando , HTML5 y JavaScript, sobre el framework Reactjs. Tiene como propósito ser
         altamente interactiva con una cantidad considerable de efectos. </p></div>
     </div>
+    <canvas id="my-canvas"></canvas>
       {
     window.onload = ()=>{
+      var confettiSettings = { target: 'my-canvas' }; 
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
       var bol= false;
       if(bol){
         document.location.reload();
