@@ -8,11 +8,16 @@ class Inicio extends Component{
   constructor(props){
     super(props);
     this.state={
-     /* valor1:this.generarValor(),
-      valor2:this.generarValor(),
-      valor3:this.generarValor()*/
+      edad:this.calculaEdad("24/09/1999")
     }
-    //this.tirar = this.tirar.bind(this);
+    this.calculaEdad = this.calculaEdad.bind(this);
+  }
+  calculaEdad(birthday){
+    var birthday_arr = birthday.split("/");
+    var birthday_date = new Date(birthday_arr[2], birthday_arr[1] - 1, birthday_arr[0]);
+    var ageDifMs = Date.now() - birthday_date.getTime()- 86400000;
+    var ageDate = new Date(ageDifMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
   }
 render(){
   return (
@@ -26,7 +31,7 @@ render(){
     </menu> 
     <div id="micontainer2">
       <div><img id="imagenmia" src="./imagenes/fotomia.jpg"/></div>
-      <div id="detalles"><p id="escribeEdad">Edad: 20 años</p></div>
+      <div id="detalles"><p id="escribeEdad">Edad: {this.state.edad} años</p></div>
     </div>
     <div id="micontainer1">
       <div id="detallesp"><p>Esta página está hecha con JavaScript, CSS3, React y HTML</p></div>

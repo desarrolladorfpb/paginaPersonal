@@ -38,6 +38,7 @@
     height: 100%;
     position: relative;
     top:10%;
+    
 }
 .containerlinksp_titulo{
     float:left;
@@ -99,4 +100,16 @@
     height: 9%;
     cursor: pointer;
     
+}
+@media only screen and (max-width: 600px){
+    .containerlink{
+        width: 100%;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 2px solid orange;
+        border-bottom: 2px solid orange;
+    }
+    .containerp{
+        top: 7%;
+    }
 }
